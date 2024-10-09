@@ -2,7 +2,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Landing } from "@/components/landing";
 import { Information } from "@/components/information";
 import Image from "next/image";
-import { TimelineDemo } from "@/components/timeline";
+import { Timeline } from "@/components/timeline";
 import { Overview } from "@/components/overview";
 import { Events } from "@/components/events";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Landing />
       <Information />
       <Overview />
-      <TimelineDemo />
+      <Timeline />
       <Events />
     </div>
   );
