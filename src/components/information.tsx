@@ -3,6 +3,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import { Spotlight } from "@/components/ui/spotlight";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -19,7 +20,7 @@ const fadeInUpAnimation: Variants = {
   },
 };
 
-const testimonials = [
+const information = [
   {
     title: "What is Supermove Tour?",
     quote:
@@ -50,6 +51,10 @@ export function Information() {
           className="w-full h-auto transform blur-[3px] scale-x-[-1] rotate-180"
         />
       </div>
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
       <div className="max-w-7xl mx-auto pt-20 z-10">
         <motion.div
           initial="hidden"
@@ -57,8 +62,8 @@ export function Information() {
           variants={fadeInUpAnimation}
           className="flex flex-col gap-20"
         >
-          {/* Mapping through testimonials to create rows */}
-          {testimonials.map((testimonial, index) => (
+          {/* Mapping through information to create rows */}
+          {information.map((testimonial, index) => (
             <motion.div
               key={index}
               variants={fadeInUpAnimation}
