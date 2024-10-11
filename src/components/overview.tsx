@@ -38,7 +38,6 @@ export function Overview() {
           </motion.h1>
         </motion.div>
       </div>
-
       <BackgroundBeams />
     </div>
   );

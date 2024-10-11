@@ -12,6 +12,9 @@ module.exports = {
   theme: {
     // rest of the code
     extend: {
+      backgroundImage: {
+        card: "linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(81,81,91,1) 0%, rgba(75,75,85,1) 0%, rgba(28,28,32,1) 9%, rgba(0,0,0,1) 38%, rgba(0,0,0,1) 78%)",
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

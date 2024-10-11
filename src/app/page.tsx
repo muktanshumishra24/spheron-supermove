@@ -12,8 +12,8 @@ export default function Home() {
       <Landing />
       <Information />
       <Overview />
-      <Timeline />
       <Events />
+      <Timeline />
     </div>
   );
 }
