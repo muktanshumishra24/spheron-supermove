@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Tweet } from "react-tweet";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -41,7 +42,7 @@ const information = [
 export function Information() {
   return (
     <div className="h-[100vh] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white">
-      <div className="absolute top-0 w-full z-10">
+      <div className="absolute top-0 w-full">
         <Image
           src="/assets/spheron-backdrop.png"
           alt="logo"
@@ -84,7 +85,7 @@ export function Information() {
           ))}
         </motion.div>
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
   );
 }

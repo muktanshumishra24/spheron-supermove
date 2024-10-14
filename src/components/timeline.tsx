@@ -8,9 +8,9 @@ export function Timeline() {
       title: "July",
       content: (
         <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            University Workshop Start.
-          </p>
+          <h1 className="text-neutral-200 text-3xl md:text-md font-normal my-8">
+            City Wide Workshops
+          </h1>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/events.webp"
@@ -19,7 +19,6 @@ export function Timeline() {
               height={300}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
             />
-            {/* Other images */}
           </div>
         </div>
       ),
@@ -28,18 +27,17 @@ export function Timeline() {
       title: "Mid-July",
       content: (
         <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            City Wide Events Start.
-          </p>
+          <h1 className="text-neutral-200 text-3xl md:text-md font-normal mb-8">
+            College & University Workshops
+          </h1>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/assets/events.webp"
+              src="/assets/workshops.webp"
               alt="startup template"
               width={300}
               height={300}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
             />
-            {/* Other images */}
           </div>
         </div>
       ),
@@ -48,9 +46,9 @@ export function Timeline() {
       title: "August",
       content: (
         <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Refined the UI components and added user feedback features.
-          </p>
+          <h1 className="text-neutral-200 text-3xl md:text-md font-normal mb-8">
+            Online Workshops
+          </h1>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/workshop2.webp"
@@ -59,7 +57,6 @@ export function Timeline() {
               height={300}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
             />
-            {/* Add more images if necessary */}
           </div>
         </div>
       ),
@@ -68,77 +65,26 @@ export function Timeline() {
       title: "Mid-August",
       content: (
         <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Optimized performance and integrated analytics tracking.
-          </p>
+          <h1 className="text-neutral-200 text-3xl md:text-md font-normal mb-8">
+            Online Workshops
+          </h1>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={300}
-              height={300}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "November",
-      content: (
-        <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Continued feature development and prepared for full release.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={300}
-              height={300}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Mid-November",
-      content: (
-        <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Launched beta testing and received great feedback from users.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/assets/dappthon.webp"
               alt="startup template"
               width={300}
               height={300}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/assets/hackathons.webp"
               alt="startup template"
               width={300}
               height={300}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06)]"
             />
-          </div>
-        </div>
-      ),
-    },
-
-    {
-      title: "December",
-      content: (
-        <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Official launch of Aceternity, including Pro features.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/assets/meet.webp"
               alt="startup template"
               width={300}
               height={300}

@@ -5,15 +5,34 @@ import Image from "next/image";
 import { Timeline } from "@/components/timeline";
 import { Overview } from "@/components/overview";
 import { Events } from "@/components/events";
+import { Footer } from "@/components/footer";
+import { Tweets } from "@/components/tweets";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
     <div className="bg-neutral-950">
-      <Landing />
-      <Information />
-      <Overview />
-      <Events />
-      <Timeline />
+      <Header />
+      <section id="landing">
+        <Landing />
+      </section>
+      <section id="information">
+        <Information />
+      </section>
+      <section id="overview">
+        <Overview />
+      </section>
+      <section id="events">
+        <Events />
+      </section>
+      <section id="tweets">
+        <Tweets />
+      </section>
+      {/* <section id="timeline">
+        <Timeline />
+      </section> */}
+
+      <Footer />
     </div>
   );
 }

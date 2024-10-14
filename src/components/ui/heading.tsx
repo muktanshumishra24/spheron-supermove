@@ -1,6 +1,7 @@
 import React from "react";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -29,7 +30,7 @@ export function Heading() {
         >
           <motion.h1
             variants={fadeInUpAnimation}
-            className="linear__text__gradient text-6xl font-extrabold leading-tight tracking-tight sm:text-8xl md:text-9xl" // Increased font size here
+            className="linear__text__gradient text-6xl font-extrabold leading-tight tracking-tight sm:text-8xl md:text-9xl"
           >
             THE
             <br />
@@ -41,6 +42,19 @@ export function Heading() {
           >
             A Journey of Empowerment: Shaping India’s Blockchain Future!
           </motion.p>
+
+          {/* Moved the sponsor image below the paragraph and centered it */}
+          <motion.div
+            variants={fadeInUpAnimation}
+            className="w-auto mx-auto mt-4 z-20" // mx-auto centers the image
+          >
+            <Image
+              src="/assets/sponsors.png"
+              alt="sponsors"
+              width={500} // Increased size for the sponsor logo
+              height={300} // Adjust height proportionally
+            />
+          </motion.div>
         </motion.div>
       </div>
     </div>
