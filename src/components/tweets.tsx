@@ -37,8 +37,8 @@ export function Tweets() {
           </motion.h1>
         </motion.div>
 
-        <div className=" max-w-8xl flex flex-row flex-wrap items-start justify-center gap-10 pb-10">
-          {" "}
+        {/* Change to flex-col to stack the pins vertically */}
+        <div className="max-w-8xl flex flex-row flex-wrap items-center gap-16 pb-10">
           {pinsData.map((pin, index) => (
             <PinContainer key={index} title={pin.title} href={pin.href}>
               <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">

@@ -1,8 +1,6 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Landing } from "@/components/landing";
 import { Information } from "@/components/information";
-import Image from "next/image";
-import { Timeline } from "@/components/timeline";
 import { Overview } from "@/components/overview";
 import { Events } from "@/components/events";
 import { Footer } from "@/components/footer";
@@ -28,10 +26,6 @@ export default function Home() {
       <section id="tweets">
         <Tweets />
       </section>
-      {/* <section id="timeline">
-        <Timeline />
-      </section> */}
-
       <Footer />
     </div>
   );
