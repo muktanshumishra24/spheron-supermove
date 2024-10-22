@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { Spotlight } from "@/components/ui/spotlight";
-import { Tweet } from "react-tweet";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -41,7 +40,25 @@ const information = [
 
 export function Information() {
   return (
-    <div className="h-[100vh] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white">
+    <div className="h-[100vh] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
+      {/* Mirrored Car Animation at the Top */}
+      <motion.div
+        className="absolute top-0 left-0 w-40 h-auto bg-transparent z-50 blur-[2px]"
+        animate={{ x: "100vw" }} // Moves the car across the screen
+        initial={{ x: "-100vw" }} // Starts the car off the left side of the screen
+        transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }} // Animation will repeat infinitely
+        style={{ transform: "scaleY(-1)" }} // Reflect the car vertically
+      >
+        <Image
+          src="/assets/car-tata-mirror.png" // Replace with the car image path
+          alt="car"
+          width={128}
+          height={64}
+          className="w-full h-auto"
+        />
+      </motion.div>
+
+      {/* Background and Content */}
       <div className="absolute top-0 w-full">
         <Image
           src="/assets/spheron-backdrop.png"
@@ -52,10 +69,14 @@ export function Information() {
           className="w-full h-auto transform blur-[3px] scale-x-[-1] rotate-180"
         />
       </div>
+
+      {/* Spotlight */}
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
+
+      {/* Main Content */}
       <div className="max-w-7xl mx-auto pt-20 z-10">
         <motion.div
           initial="hidden"
@@ -85,7 +106,6 @@ export function Information() {
           ))}
         </motion.div>
       </div>
-      {/* <BackgroundBeams /> */}
     </div>
   );
 }

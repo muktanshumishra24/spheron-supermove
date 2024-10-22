@@ -34,7 +34,20 @@ export function Heading() {
           >
             THE
             <br />
-            <span className="text-8xl md:text-9xl">SUPERMOVE TOUR</span>{" "}
+            <span className="text-8xl md:text-9xl">
+              SUPERM
+              <span>
+                {" "}
+                <Image
+                  src="/assets/aptos-white.png"
+                  alt="SUPERMOVE"
+                  width={100}
+                  height={150}
+                  className="inline-block mr-2 -ml-3 pb-5"
+                />
+              </span>
+              VE TOUR
+            </span>{" "}
           </motion.h1>
           <motion.p
             variants={fadeInUpAnimation}
