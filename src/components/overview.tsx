@@ -1,9 +1,6 @@
 "use client";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { WobbleCard } from "@/components/ui/wobble-card";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
 const fadeInUpAnimation: Variants = {
@@ -23,14 +20,14 @@ const fadeInUpAnimation: Variants = {
 
 export function Overview() {
   return (
-    <div className="h-[100vh] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased mt-20">
+    <div className="h-[100vh] w-full rounded-md bg-transparent relative flex flex-col items-center justify-center antialiased mt-10">
       <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
-        <div className="max-w-7xl mx-auto py-20 z-10">
+        <div className="max-w-7xl mx-auto py-20 z-10 flex flex-col items-center">
           <motion.div
             initial="hidden"
             animate="show"
             variants={fadeInUpAnimation}
-            className="flex justify-center text-center flex-col gap-40"
+            className="flex justify-start text-left flex-col gap-40"
           >
             <motion.h1
               variants={fadeInUpAnimation}
@@ -40,74 +37,79 @@ export function Overview() {
             </motion.h1>
           </motion.div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-7xl mx-auto w-full mb-48">
-          <WobbleCard
-            containerClassName="col-span-1 w-full bg-black min-h-[300px]"
-            className="w-full"
+
+        {/* Flex Container for the 2x2 grid */}
+        <div className="flex flex-wrap justify-center items-start gap-8 max-w-7xl mx-auto w-full mb-48">
+          {/* Content Section 1 - Left Aligned */}
+          <motion.div
+            variants={fadeInUpAnimation}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col w-full max-w-lg text-left"
           >
-            <div className="max-w-xs">
-              <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                Extensive Learning
-              </h2>
-              <p className="mt-4 text-left text-base/6 text-neutral-200">
-                Through a series of immersive workshops, both at individual
-                colleges and city-wide, participants will gain a deep
-                understanding of Spheron and Aptos’ ecosystem, Decentralised
-                Apps (dApps), deploying smart contracts.
-              </p>
-            </div>
-            <Image
-              src="/linear.webp"
-              width={500}
-              height={500}
-              alt="linear demo image"
-              className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-            />
-          </WobbleCard>
-          <WobbleCard containerClassName="col-span-1 w-full min-h-[300px]">
-            <h2 className="max-w-96 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              Extensive Learning
+            </h2>
+            <p className="mt-4 text-base/6 text-neutral-200">
+              Through a series of immersive workshops, both at individual
+              colleges and city-wide, participants will gain a deep
+              understanding of Spheron and Aptos’ ecosystem, Decentralised Apps
+              (dApps), deploying smart contracts.
+            </p>
+          </motion.div>
+
+          {/* Content Section 2 - Right Aligned */}
+          <motion.div
+            variants={fadeInUpAnimation}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col w-full max-w-lg text-right"
+          >
+            <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
               Supermove BuildersMeet
             </h2>
-            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            <p className="mt-4 text-base/6 text-neutral-200">
               In 6 major cities across India, exclusive BuildersMeet events will
               connect early-stage Web3 founders, developers, and enthusiasts
               with industry leaders, investors, and mentors for networking,
               learning, and potential funding opportunities.
             </p>
-          </WobbleCard>
-          <WobbleCard containerClassName="col-span-1 w-full min-h-[300px]">
-            <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          </motion.div>
+
+          {/* Content Section 3 - Left Aligned */}
+          <motion.div
+            variants={fadeInUpAnimation}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col w-full max-w-lg text-left"
+          >
+            <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
               Hackathon Showdown
             </h2>
-            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            <p className="mt-4 text-base/6 text-neutral-200">
               Six dynamic hackathons (day-dappAthons and dappAthons) will
               provide a competitive platform for participants to showcase their
               skills, build innovative projects, and win exciting rewards.
             </p>
-          </WobbleCard>
-          <WobbleCard
-            containerClassName="col-span-1 w-full bg-black min-h-[300px]"
-            className="w-full"
+          </motion.div>
+
+          {/* Content Section 4 - Right Aligned */}
+          <motion.div
+            variants={fadeInUpAnimation}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col w-full max-w-lg text-right min-h-[300px]"
           >
-            <div className="max-w-xs">
-              <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                Real-World Impact
-              </h2>
-              <p className="mt-4 text-left text-base/6 text-neutral-200">
-                The Spheron SuperMove tour is a mission towards creating a real
-                - world impact by giving hands-on experience building
-                decentralized applications (dApps) on Aptos with real-world use
-                cases, leveraging Spheron's infrastructure.
-              </p>
-            </div>
-            <Image
-              src="/linear.webp"
-              width={500}
-              height={500}
-              alt="linear demo image"
-              className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-            />
-          </WobbleCard>
+            <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              Real-World Impact
+            </h2>
+            <p className="mt-4 text-base/6 text-neutral-200">
+              The Spheron SuperMove tour is a mission towards creating a real
+              world impact by giving hands-on experience building decentralized
+              applications (dApps) on Aptos with real-world use cases,
+              leveraging Spheron's infrastructure.
+            </p>
+          </motion.div>
         </div>
       </BackgroundLines>
     </div>

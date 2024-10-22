@@ -40,10 +40,10 @@ const information = [
 
 export function Information() {
   return (
-    <div className="h-[100vh] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
+    <div className="h-screen w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
       {/* Mirrored Car Animation at the Top */}
       <motion.div
-        className="absolute top-0 left-0 w-40 h-auto bg-transparent z-50 blur-[2px]"
+        className="absolute top-0 left-0 w-40 h-auto bg-transparent z-50 blur-[3px]"
         animate={{ x: "100vw" }} // Moves the car across the screen
         initial={{ x: "-100vw" }} // Starts the car off the left side of the screen
         transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }} // Animation will repeat infinitely
