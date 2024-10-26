@@ -40,7 +40,7 @@ const information = [
 
 export function Information() {
   return (
-    <div className="h-screen w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
+    <div className="h-full md:h-screen w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
       <motion.div
         className="absolute top-0 left-0 w-40 h-auto bg-transparent z-50 blur-[3px]"
         animate={{ x: "100vw" }}
@@ -73,7 +73,7 @@ export function Information() {
         fill="white"
       />
 
-      <div className="max-w-7xl mx-auto pt-20 z-10">
+      <div className="max-w-7xl mx-auto pt-40 md:pt-20 z-10">
         <motion.div
           initial="hidden"
           animate="show"
@@ -86,14 +86,14 @@ export function Information() {
               variants={fadeInUpAnimation}
               className="flex flex-col md:flex-row gap-10"
             >
-              <div className="md:w-1/2">
-                <h1 className="linear__text__gradient text-5xl font-extrabold leading-tight tracking-tight">
+              <div className="text-center md:text-start md:w-1/2">
+                <h1 className="linear__text__gradient text-2xl md:text-5xl font-extrabold leading-tight tracking-tight">
                   {testimonial.title}
                 </h1>
               </div>
 
-              <div className="md:w-1/2">
-                <p className="text-xl">{testimonial.quote}</p>
+              <div className="md:w-1/2 px-4 md:px-0 text-center md:text-start">
+                <p className="text-sm md:text-xl">{testimonial.quote}</p>
               </div>
             </motion.div>
           ))}
