@@ -37,17 +37,24 @@ export function Heading() {
             <span className="text-6xl md:text-9xl">
               SUPERM
               <span>
+                {" "}
                 <div className="hidden sm:inline-block">
-                  {" "}
                   <Image
                     src="/assets/aptos-white.png"
                     alt="SUPERMOVE"
                     width={100}
                     height={150}
-                    className="mr-2 -ml-3 pb-5"
+                    className="mr-2 -ml-3"
                   />
                 </div>
-                <span className=" inline-block sm:hidden text-6xl">O</span>
+                <div className="inline-block sm:hidden">
+                  <Image
+                    src="/assets/aptos-white.png"
+                    alt="SUPERMOVE"
+                    width={40}
+                    height={60}
+                  />
+                </div>
               </span>
               VE TOUR
             </span>{" "}
