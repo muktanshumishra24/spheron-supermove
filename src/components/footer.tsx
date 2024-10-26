@@ -19,7 +19,7 @@ export function Footer() {
           <h3 className="text-white text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex justify-center md:justify-end space-x-4">
             <a
-              href="https://twitter.com"
+              href="https://x.com/SpheronFDN"
               className="hover:text-white transition-colors"
             >
               <svg
@@ -33,21 +33,7 @@ export function Footer() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
-              className="hover:text-white transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path d="M22.225 0H1.771C.79 0 0 .782 0 1.75v20.495c0 .967.79 1.755 1.771 1.755h20.451c.98 0 1.779-.788 1.779-1.755V1.75C24 .782 23.205 0 22.225 0zM7.121 20.452H3.577V9.029h3.544v11.423zm-1.775-13.01a2.061 2.061 0 110-4.122 2.061 2.061 0 010 4.122zm15.366 13.01h-3.544v-5.955c0-3.08-4.093-2.846-4.093 0v5.955h-3.544V9.029h3.544v1.561c1.552-2.877 8.091-3.082 8.091 2.739v7.123z" />
-              </svg>
-            </a>
-            <a
-              href="https://github.com"
+              href="https://github.com/muktanshumishra24/spheron-supermove"
               className="hover:text-white transition-colors"
             >
               <svg

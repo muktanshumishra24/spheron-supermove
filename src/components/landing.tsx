@@ -14,7 +14,7 @@ export function Landing() {
       </div>
 
       <motion.div
-        className="absolute bottom-0 left-0 w-40 h-auto bg-transparent z-50 pt-40"
+        className="absolute bottom-0 left-0 w-40 h-auto bg-transparent z-10 pt-40"
         animate={{ x: "100vw" }}
         initial={{ x: "-100vw" }}
         transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }}
