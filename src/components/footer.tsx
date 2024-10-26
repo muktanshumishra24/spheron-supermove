@@ -1,15 +1,13 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] text-gray-400 py-10">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
+    <footer className="bg-[#0a0a0a] text-gray-400 py-10 border-t border-gray-700 mt-10">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+        {/* Left: Main Content */}
+        <div className="text-center md:text-left md:w-1/2">
           <h2 className="text-white text-2xl font-bold mb-4">
             Spheron Supermove Tour
           </h2>
@@ -18,40 +16,10 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#about" className="hover:text-white transition-colors">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="hover:text-white transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white transition-colors">
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="#privacy" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Social Links */}
-        <div>
+        {/* Right: Social Links */}
+        <div className="text-center md:text-right md:w-1/2">
           <h3 className="text-white text-xl font-semibold mb-4">Follow Us</h3>
-          <div className="flex space-x-4">
+          <div className="flex justify-center md:justify-end space-x-4">
             <a
               href="https://twitter.com"
               className="hover:text-white transition-colors"
@@ -99,9 +67,9 @@ export function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm">
+      <div className=" pt-6 text-center text-sm">
         <p>
-          &copy; {new Date().getFullYear()} Your Brand. All rights reserved.
+          &copy; {new Date().getFullYear()} Yadav Brand. All rights reserved.
         </p>
       </div>
     </footer>

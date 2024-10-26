@@ -6,6 +6,7 @@ import { Events } from "@/components/events";
 import { Footer } from "@/components/footer";
 import { Tweets } from "@/components/tweets";
 import { Header } from "@/components/header";
+import { JoinUs } from "@/components/joinus";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section id="events">
         <Events />
+      </section>
+      <section id="joinus">
+        <JoinUs />
       </section>
       <section id="tweets">
         <Tweets />

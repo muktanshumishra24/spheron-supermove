@@ -6,6 +6,7 @@ module.exports = {
       "images.unsplash.com", // Add Unsplash domain here
       "api.microlink.io", // Microlink Image Preview
       "pbs.twimg.com",
+      "api.microlink.io",
     ],
   },
 };

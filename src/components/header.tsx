@@ -42,6 +42,9 @@ export const Header = () => {
           <a href="#events" className="text-white opacity-75 hover:opacity-100">
             Events
           </a>
+          <a href="#joinus" className="text-white opacity-75 hover:opacity-100">
+            Join
+          </a>
           <a href="#tweets" className="text-white opacity-75 hover:opacity-100">
             Journey
           </a>
