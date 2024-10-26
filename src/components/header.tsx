@@ -16,10 +16,9 @@ export const Header = () => {
       initial="hidden"
       animate="visible"
       variants={navVariants}
-      className="bg-[#0a0a0a] shadow-md fixed top-5 left-0 right-0 z-50 w-[40vw] mx-auto rounded-[50px] border border-[#464646]" // Added mx-auto
+      className="bg-[#0a0a0a] shadow-md fixed top-5 left-0 right-0 z-50 w-[40vw] mx-auto rounded-[50px] border border-[#464646]"
     >
       <div className="flex justify-center h-16 items-center">
-        {/* Links */}
         <div className="flex space-x-8">
           <a
             href="#landing"
@@ -48,12 +47,6 @@ export const Header = () => {
           <a href="#tweets" className="text-white opacity-75 hover:opacity-100">
             Journey
           </a>
-          {/* <a
-            href="#timeline"
-            className="text-white opacity-75 hover:opacity-100"
-          >
-            Timeline
-          </a> */}
         </div>
       </div>
     </motion.nav>

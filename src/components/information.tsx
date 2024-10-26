@@ -41,16 +41,15 @@ const information = [
 export function Information() {
   return (
     <div className="h-screen w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-hidden">
-      {/* Mirrored Car Animation at the Top */}
       <motion.div
         className="absolute top-0 left-0 w-40 h-auto bg-transparent z-50 blur-[3px]"
-        animate={{ x: "100vw" }} // Moves the car across the screen
-        initial={{ x: "-100vw" }} // Starts the car off the left side of the screen
-        transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }} // Animation will repeat infinitely
-        style={{ transform: "scaleY(-1)" }} // Reflect the car vertically
+        animate={{ x: "100vw" }}
+        initial={{ x: "-100vw" }}
+        transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }}
+        style={{ transform: "scaleY(-1)" }}
       >
         <Image
-          src="/assets/car-tata-mirror.png" // Replace with the car image path
+          src="/assets/car-tata-mirror.png"
           alt="car"
           width={128}
           height={64}
@@ -58,7 +57,6 @@ export function Information() {
         />
       </motion.div>
 
-      {/* Background and Content */}
       <div className="absolute top-0 w-full">
         <Image
           src="/assets/spheron-backdrop.png"
@@ -70,13 +68,11 @@ export function Information() {
         />
       </div>
 
-      {/* Spotlight */}
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto pt-20 z-10">
         <motion.div
           initial="hidden"
@@ -84,21 +80,18 @@ export function Information() {
           variants={fadeInUpAnimation}
           className="flex flex-col gap-20"
         >
-          {/* Mapping through information to create rows */}
           {information.map((testimonial, index) => (
             <motion.div
               key={index}
               variants={fadeInUpAnimation}
               className="flex flex-col md:flex-row gap-10"
             >
-              {/* Left side - Title */}
               <div className="md:w-1/2">
                 <h1 className="linear__text__gradient text-5xl font-extrabold leading-tight tracking-tight">
                   {testimonial.title}
                 </h1>
               </div>
 
-              {/* Right side - Quote */}
               <div className="md:w-1/2">
                 <p className="text-xl">{testimonial.quote}</p>
               </div>

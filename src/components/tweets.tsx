@@ -37,7 +37,6 @@ export function Tweets() {
           </motion.h1>
         </motion.div>
 
-        {/* Change to flex-col to stack the pins vertically */}
         <div className="max-w-8xl flex flex-row flex-wrap items-center gap-16 pb-10">
           {pinsData.map((pin, index) => (
             <PinContainer key={index} title={pin.title} href={pin.href}>
@@ -61,7 +60,6 @@ export function Tweets() {
   );
 }
 
-// src/constants/pinsData.ts
 export const pinsData = [
   {
     title: "NSUT",

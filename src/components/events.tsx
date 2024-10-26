@@ -5,7 +5,6 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
-import { time } from "console";
 
 const fadeInUpAnimation: Variants = {
   hidden: {
@@ -99,14 +98,12 @@ export function Events() {
         </motion.div>
       </div>
 
-      {/* Flexbox layout for the cards */}
       <div className="flex flex-wrap justify-center gap-5 mt-10 ">
         {eventsData.map((event, index) => (
           <Link key={index} href={event.link} target="__blank" passHref>
             <CardContainer className="inter-var">
               <CardBody className="bg-[#0a0a0a] relative group/card hover:shadow-2xl hover:shadow-white/[0.5] border border-white/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 cursor-pointer">
                 {" "}
-                {/* Added border here */}
                 <CardItem
                   translateZ="50"
                   className="text-2xl font-bold text-white"

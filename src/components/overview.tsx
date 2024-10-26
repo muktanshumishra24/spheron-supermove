@@ -38,9 +38,7 @@ export function Overview() {
           </motion.div>
         </div>
 
-        {/* Flex Container for the 2x2 grid */}
         <div className="flex flex-wrap justify-center items-start gap-8 max-w-7xl mx-auto w-full mb-48">
-          {/* Content Section 1 - Left Aligned */}
           <motion.div
             variants={fadeInUpAnimation}
             initial="hidden"
@@ -58,7 +56,6 @@ export function Overview() {
             </p>
           </motion.div>
 
-          {/* Content Section 2 - Right Aligned */}
           <motion.div
             variants={fadeInUpAnimation}
             initial="hidden"
@@ -76,7 +73,6 @@ export function Overview() {
             </p>
           </motion.div>
 
-          {/* Content Section 3 - Left Aligned */}
           <motion.div
             variants={fadeInUpAnimation}
             initial="hidden"
@@ -93,7 +89,6 @@ export function Overview() {
             </p>
           </motion.div>
 
-          {/* Content Section 4 - Right Aligned */}
           <motion.div
             variants={fadeInUpAnimation}
             initial="hidden"

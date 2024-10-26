@@ -56,16 +56,15 @@ export function Heading() {
             A Journey of Empowerment: Shaping India’s Blockchain Future!
           </motion.p>
 
-          {/* Moved the sponsor image below the paragraph and centered it */}
           <motion.div
             variants={fadeInUpAnimation}
-            className="w-auto mx-auto mt-4 z-20" // mx-auto centers the image
+            className="w-auto mx-auto mt-4 z-20"
           >
             <Image
               src="/assets/sponsors.png"
               alt="sponsors"
-              width={500} // Increased size for the sponsor logo
-              height={300} // Adjust height proportionally
+              width={500}
+              height={300}
             />
           </motion.div>
         </motion.div>

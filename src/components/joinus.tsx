@@ -37,7 +37,6 @@ export function JoinUs() {
         </motion.div>
       </div>
 
-      {/* Row 1: Main Content */}
       <div className="flex flex-col text-neutral-500 text-xl md:text-2xl space-y-6 mb-16 max-w-5xl px-4">
         <p>
           Calling all the web3 chads! This ain't no solo - dolo mission, the
@@ -50,7 +49,6 @@ export function JoinUs() {
         </p>
       </div>
 
-      {/* Row 2: Links */}
       <div className="flex flex-col text-white text-xl md:text-3xl space-y-6 max-w-5xl px-4">
         <p>
           Check out more information about{" "}

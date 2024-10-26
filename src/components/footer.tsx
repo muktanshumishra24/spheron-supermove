@@ -6,7 +6,6 @@ export function Footer() {
   return (
     <footer className="bg-[#0a0a0a] text-gray-400 py-10 border-t border-gray-700 mt-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-        {/* Left: Main Content */}
         <div className="text-center md:text-left md:w-1/2">
           <h2 className="text-white text-2xl font-bold mb-4">
             Spheron Supermove Tour
@@ -16,7 +15,6 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Right: Social Links */}
         <div className="text-center md:text-right md:w-1/2">
           <h3 className="text-white text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex justify-center md:justify-end space-x-4">
@@ -65,8 +63,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Copyright Section */}
       <div className=" pt-6 text-center text-sm">
         <p>
           &copy; {new Date().getFullYear()} Yadav Brand. All rights reserved.

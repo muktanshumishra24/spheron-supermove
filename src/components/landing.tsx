@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
-import carAnimation from "../../public/assets/car.json"; // Import the Lottie JSON file
 import Image from "next/image";
 import { Heading } from "./ui/heading";
 
@@ -14,15 +13,14 @@ export function Landing() {
         <Heading />
       </div>
 
-      {/* Car Lottie animation */}
       <motion.div
         className="absolute bottom-0 left-0 w-40 h-auto bg-transparent z-50 pt-40"
-        animate={{ x: "100vw" }} // Moves the car across the screen
-        initial={{ x: "-100vw" }} // Starts the car off the left side of the screen
-        transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }} // Animation will repeat infinitely
+        animate={{ x: "100vw" }}
+        initial={{ x: "-100vw" }}
+        transition={{ duration: 8, repeat: Infinity, repeatType: "loop" }}
       >
         <Image
-          src="/assets/car-tata.png" // Replace with the car image path
+          src="/assets/car-tata.png"
           alt="car"
           width={128}
           height={64}
