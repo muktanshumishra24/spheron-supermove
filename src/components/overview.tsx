@@ -20,7 +20,7 @@ const fadeInUpAnimation: Variants = {
 
 export function Overview() {
   return (
-    <div className="h-screen w-full rounded-md bg-transparent relative flex flex-col items-center justify-center antialiased mt-72 mb-20 md:mb-0 md:mt-0">
+    <div className="h-full md:h-screen w-full rounded-md bg-transparent relative flex flex-col items-center justify-center antialiased mt-10">
       <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
         <div className="max-w-7xl mx-auto py-20 z-10 flex flex-col items-center">
           <motion.div
@@ -38,12 +38,12 @@ export function Overview() {
           </motion.div>
         </div>
 
-        <div className="flex flex-wrap justify-center items-start gap-8 max-w-7xl mx-auto w-full">
+        <div className="flex flex-wrap justify-center items-start gap-8 max-w-7xl mx-auto w-full mb-48">
           <motion.div
             variants={fadeInUpAnimation}
             initial="hidden"
             animate="show"
-            className="flex flex-col w-full max-w-xl text-left"
+            className="flex flex-col w-full max-w-lg text-left"
           >
             <h2 className="text-balance text-lg md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
               Extensive Learning
@@ -60,7 +60,7 @@ export function Overview() {
             variants={fadeInUpAnimation}
             initial="hidden"
             animate="show"
-            className="flex flex-col w-full max-w-xl text-right"
+            className="flex flex-col w-full max-w-lg text-right"
           >
             <h2 className="text-balance text-lg md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
               Supermove BuildersMeet
@@ -77,7 +77,7 @@ export function Overview() {
             variants={fadeInUpAnimation}
             initial="hidden"
             animate="show"
-            className="flex flex-col w-full max-w-xl text-left"
+            className="flex flex-col w-full max-w-lg text-left"
           >
             <h2 className="text-balance text-lg md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
               Hackathon Showdown
@@ -93,7 +93,7 @@ export function Overview() {
             variants={fadeInUpAnimation}
             initial="hidden"
             animate="show"
-            className="flex flex-col w-full max-w-xl text-right min-h-[300px]"
+            className="flex flex-col w-full max-w-lg text-right min-h-[300px]"
           >
             <h2 className="text-balance text-lg md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
               Real-World Impact
