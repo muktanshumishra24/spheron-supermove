@@ -18,11 +18,11 @@ export default function Home() {
       <section id="information">
         <Information />
       </section>
-      <section id="overview">
-        <Overview />
-      </section>
       <section id="events">
         <Events />
+      </section>
+      <section id="overview">
+        <Overview />
       </section>
       <section id="joinus">
         <JoinUs />
